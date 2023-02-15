@@ -104,7 +104,7 @@ def create_contract(request):
             messages.success(request, 'ข้อมูลของผู้เช่า ได้ถูกเอาเข้าระบบแล้ว')
             return render(request, 'my_app/admin_page.html', {'section': 'new_contract'})
         else:
-            messages.error(request, '??มีข้อผิดพลาดเกิดขึ้น !!!')
+            messages.error(request, 'มีข้อผิดพลาดเกิดขึ้น !!!')
             # ------------------------------------------------------------------------------
             return render(request, 'my_app/admin_page.html', {'section': 'new_contract'})
             # ------------------------------------------------------------------------------
